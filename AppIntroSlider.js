@@ -240,6 +240,7 @@ export default class AppIntroSlider extends React.Component {
           onMomentumScrollEnd={this._onMomentumScrollEnd}
           extraData={this.state.width}
           onLayout={this._onLayout}
+          decelerationRate={0.0}
           {...otherProps}
         />
         {!hidePagination && this._renderPagination()}
